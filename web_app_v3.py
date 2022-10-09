@@ -12,7 +12,7 @@ def local_css(file_name):
 
 
 #ticker search feature in sidebar
-st.sidebar.subheader("""Stock Search Web App""")
+st.sidebar.subheader("""Welcome to Zorro API Dashs(BDRs)""")
 selected_stock = st.sidebar.text_input("Enter a valid stock ticker...", "GOOG")
 button_clicked = st.sidebar.button("GO")
 if button_clicked == "GO":
