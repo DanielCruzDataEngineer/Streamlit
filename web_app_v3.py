@@ -9,7 +9,7 @@ def local_css(file_name):
         st.sidebar.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 #local css sheet
-local_css("style.css")
+
 
 #ticker search feature in sidebar
 st.sidebar.subheader("""Stock Search Web App""")
