@@ -25,7 +25,7 @@ def main():
     #get data on searched ticker
     stock_data = yf.Ticker(selected_stock)
     #get historical data for searched ticker
-    stock_df = stock_data.history(period='4d', start='2020-01-01', end=None)
+    stock_df = stock_data.history(period='4d', start='2022-09-10', end=None)
     #print line chart with daily closing prices for searched ticker
     st.line_chart(stock_df.Close)
 
