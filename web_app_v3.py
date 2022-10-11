@@ -126,5 +126,7 @@ def main():
         display_sustainability = (stock_data.sustainability)
     if display_sustainability.empty == True:
         st.write("No data available at the moment")
+    else:
+        st.write(display_sustainability)
 if __name__ == "__main__":
     main()
