@@ -8,14 +8,14 @@ def local_css(file_name):
     with open(file_name) as f:
         st.sidebar.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-today = datetime.date.today()
+
 
 
 #ticker search feature in sidebar
 st.sidebar.subheader("""Welcome to Zorro API Dashs(BDRs)""")
 selected_stock = st.sidebar.text_input("Enter a valid stock ticker...", "GOOG")
 button_clicked = st.sidebar.button("GO")
-start_date = st.date_input('Start date : ', today)
+start_date = st.date_input('Start date : ')
 if button_clicked == "GO":
 
     main()
