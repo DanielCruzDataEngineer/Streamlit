@@ -8,13 +8,14 @@ def local_css(file_name):
     with open(file_name) as f:
         st.sidebar.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-#local css sheet
+today = datetime.date.today()
 
 
 #ticker search feature in sidebar
 st.sidebar.subheader("""Welcome to Zorro API Dashs(BDRs)""")
 selected_stock = st.sidebar.text_input("Enter a valid stock ticker...", "GOOG")
 button_clicked = st.sidebar.button("GO")
+start_date = st.date_input('Start date : ', today)
 if button_clicked == "GO":
 
     main()
@@ -25,7 +26,7 @@ def main():
     #get data on searched ticker
     stock_data = yf.Ticker(selected_stock)
     #get historical data for searched ticker
-    stock_df = stock_data.history(period='1m', start='2021-10-10', end=None)
+    stock_df = stock_data.history(period='1m', start=f"{start_date}", end=None)
     #print line chart with daily closing prices for searched ticker
     st.line_chart(stock_df.Close)
 
