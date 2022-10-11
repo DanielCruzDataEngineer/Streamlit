@@ -15,7 +15,7 @@ def local_css(file_name):
 st.sidebar.subheader("""Welcome to Zorro API Dashs(BDRs)""")
 selected_stock = st.sidebar.text_input("Enter a valid stock ticker...", "GOOG")
 button_clicked = st.sidebar.button("GO")
-start_date = st.date_input('Start date : ')
+start_date = st.date_input('Start date : ',"2022-07-01")
 if button_clicked == "GO":
 
     main()
