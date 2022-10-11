@@ -120,7 +120,7 @@ def main():
         else:
             st.write(display_analyst_rec)
     #check to display the list of sustainability
-    sustainability =  st.siderbar.checkbox("Sustainability")
+    sustainability =  st.sidebar.checkbox("Sustainability")
     if sustainability:
         st.subheader("""**Sustainability** for """ + selected_stock)
         display_sustainability = (stock_data.sustainability)
