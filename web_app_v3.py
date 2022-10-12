@@ -10,7 +10,7 @@ def local_css(file_name):
     with open(file_name) as f:
         st.sidebar.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-url = "https://efgh4w.deta.dev/get-tickers"
+
 
 
 #ticker search feature in sidebar
@@ -19,7 +19,7 @@ selected_stock = st.sidebar.text_input("Enter a valid stock ticker...", "GOOG")
 button_clicked = st.sidebar.button("GO")
 start_date = st.date_input('Start date : ')
 if st.button("Zorro API in JSON"):
-    webbrowser.open_new(url)
+    webbrowser.open_new("https://efgh4w.deta.dev/get-tickers")
 if button_clicked == "GO":
 
     main()
