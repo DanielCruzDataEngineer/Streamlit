@@ -16,7 +16,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-st.sidebar.image("https://www.48hourslogo.com/oss/works/2022/03/07/151013576494/116671_11057_42222775-8fc2-41ff-ae69-a3e191315d3a.jpg",width=150)
+st.sidebar.image("https://www.48hourslogo.com/oss/works/2022/03/07/151013576494/116671_11057_42222775-8fc2-41ff-ae69-a3e191315d3a.jpg",width=95)
 #ticker search feature in sidebar
 st.sidebar.subheader("""Welcome to Zorro API Dashs(BDRs)""")
 selected_stock = st.sidebar.text_input("Enter a valid stock ticker...", "GOOG")
