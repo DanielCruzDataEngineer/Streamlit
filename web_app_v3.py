@@ -1,5 +1,6 @@
 #import required libraries
 from re import T
+import webbrowser
 import streamlit as st
 import yfinance as yf
 from datetime import datetime
@@ -9,7 +10,7 @@ def local_css(file_name):
     with open(file_name) as f:
         st.sidebar.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-
+url = "https://efgh4w.deta.dev/get-tickers"
 
 
 #ticker search feature in sidebar
@@ -17,6 +18,8 @@ st.sidebar.subheader("""Welcome to Zorro API Dashs(BDRs)""")
 selected_stock = st.sidebar.text_input("Enter a valid stock ticker...", "GOOG")
 button_clicked = st.sidebar.button("GO")
 start_date = st.date_input('Start date : ')
+if st.sidebar.button("Zorro API in JSON"):
+    webbrowser.open_new_tab(url)
 if button_clicked == "GO":
 
     main()
