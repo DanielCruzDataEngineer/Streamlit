@@ -12,9 +12,13 @@ def local_css(file_name):
 
 
 
-
+st.set_page_config(
+    page_title="Zorro API DashBoards",
+    page_icon="🧊",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 #ticker search feature in sidebar
-st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.48hourslogo.com%2Fcontest%2F116671&psig=AOvVaw0BO0dR3LHAgQKRgBlIvgnI&ust=1665661019187000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPig_fvM2voCFQAAAAAdAAAAABAE", width=100)
 st.sidebar.subheader("""Welcome to Zorro API Dashs(BDRs)""")
 selected_stock = st.sidebar.text_input("Enter a valid stock ticker...", "GOOG")
 button_clicked = st.sidebar.button("GO")
