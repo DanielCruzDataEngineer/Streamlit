@@ -9,15 +9,15 @@ from datetime import datetime
 def local_css(file_name):
     with open(file_name) as f:
         st.sidebar.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
-
-
 st.set_page_config(
     page_title="Zorro API DashBoards",
     page_icon="🧊",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+
+
 #ticker search feature in sidebar
 st.sidebar.subheader("""Welcome to Zorro API Dashs(BDRs)""")
 selected_stock = st.sidebar.text_input("Enter a valid stock ticker...", "GOOG")
@@ -29,6 +29,7 @@ if button_clicked == "GO":
 
 #main function
 def main():
+
     st.subheader("""Daily **closing price** for """ + selected_stock)
     #get data on searched ticker
     stock_data = yf.Ticker(selected_stock)
