@@ -12,7 +12,7 @@ def local_css(file_name):
         st.sidebar.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 st.set_page_config(
     page_title="Zorro API DashBoards",
-    page_icon="🧊S2",
+    page_icon="https://www.48hourslogo.com/oss/works/2022/03/07/151013576494/116671_11057_42222775-8fc2-41ff-ae69-a3e191315d3a.jpg",
     layout="wide",
     initial_sidebar_state="expanded"
 )
