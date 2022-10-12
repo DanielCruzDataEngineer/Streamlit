@@ -11,7 +11,7 @@ def local_css(file_name):
         st.sidebar.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 st.set_page_config(
     page_title="Zorro API DashBoards",
-    page_icon="🧊",
+    page_icon="🧊S2",
     layout="wide",
     initial_sidebar_state="expanded"
 )
