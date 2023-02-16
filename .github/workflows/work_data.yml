@@ -24,4 +24,4 @@ jobs:
           tags: danielcruzr/streamlit:latest
       - name: Execute o contêiner
         run: |
-          docker run -d -p 8080:80 streamlit:latest
+          docker run -d -p 8080:80 danielcruzr/streamlit:latest
