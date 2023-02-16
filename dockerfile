@@ -2,7 +2,7 @@
 FROM python:3.7.9-slim
 
 #Expose port 8080
-EXPOSE 8080
+EXPOSE 8501
 
 #Optional - install git to fetch packages directly from github
 RUN apt-get update && apt-get install -y git
